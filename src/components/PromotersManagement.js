@@ -18,7 +18,7 @@ const PromotersManagement = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl my-10 bg-white rounded-lg">
+    <div className="max-w-5xl my-10 bg-white rounded-lg">
       <h2 className="text-xl font-bold mb-6 text-black">
         Promoters & Management
       </h2>

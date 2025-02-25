@@ -53,7 +53,7 @@ const ShareholdingPattern = () => {
       {shareholdingData.length > 0 ? (
         <div className="grid grid-cols-5 gap-4  p-4 rounded-lg border border-gray-200">
           {/* Render Headers */}
-          <div className="font-bold text-gray-800 p-2 text-center">
+          <div className="font-bold text-gray-800 p-2 text-left">
             Shareholder
           </div>
           {years.map((year, index) => (
@@ -71,10 +71,10 @@ const ShareholdingPattern = () => {
               {row.map((cell, colIndex) => (
                 <div
                   key={colIndex}
-                  className={`p-2 text-center ${
+                  className={`p-2  ${
                     colIndex === 0
                       ? 'font-semibold text-gray-700 text-left'
-                      : 'text-gray-600'
+                      : 'text-gray-600 text-center'
                   }`}
                 >
                   {cell}
