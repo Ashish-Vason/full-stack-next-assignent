@@ -2,20 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.hero-section {
+  padding: 5% 10%;
+  background-color: #f9fbf9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.main-navbar {
+  z-index: 999999;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: #f9fbf980;
+  border: 1px solid #000;
+  border-bottom: 1px #0000001a;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  padding: 0% 10%;
+  display: flex;
+  position: sticky;
+  top: 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.title {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  color: var(--text-color);
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Inter 28 Pt', Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  display: flex;
+}
+
+.title.left {
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-top: 0;
+}
+
+.h-4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Inter 28 Pt', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  display: block;
+}
+
+.custom {
+  width: -webkit-fill-available;
 }
